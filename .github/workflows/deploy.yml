@@ -12,4 +12,4 @@ jobs:
           env:
             RENDER_WEBHOOK_URL: ${{ secrets.RENDER_WEBHOOKURL }}
           run: |
-            curl -X GET \ $RENDER_WEBHOOK_URL
+            curl -X POST $RENDER_WEBHOOK_URL
